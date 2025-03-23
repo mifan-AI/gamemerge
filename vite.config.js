@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig({
+  base: '/',  // 添加这一行
   plugins: [vue()],
   resolve: {
     alias: {
@@ -13,4 +14,4 @@ export default defineConfig({
     port: 3000,
     open: true,
   },
-}) 
+})
